@@ -494,3 +494,13 @@ color: #8c8c8c;
     border-radius: 57px!important;
 
 }
+@media (max-width: 991px) and (min-width: 768px){
+    
+}
+@media (max-width: 767px){
+    .padding0{
+                padding-right: 15px!important;
+    padding-left: 15px !important;
+    }
+    
+}

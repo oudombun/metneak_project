@@ -96,7 +96,7 @@ function postingNow(){
                       </div>
                       <div class="article-header">
                           <div class="article-profile f-bg d-inline-block"
-                              style="background-image: url('https://scontent.fpnh8-2.fna.fbcdn.net/v/t1.0-9/37192037_829147917282978_3511163432659320832_n.jpg?_nc_cat=100&_nc_eui2=AeEIsiPgLOxxEtCwUBrBA5x00pZ0xRc4we56tMbwAcrtrBKviV0PXTDuf6pG2b-Z62MQwpuwwGgpCLZO44oEzFnsLeAAE3Zev5MXQSv2zu23zw&_nc_ht=scontent.fpnh8-2.fna&oh=6c3c4e9287532ab52b80ff1e7f686dd0&oe=5D59315C')">
+                              style="background-image: url('image/lisa.jpg')">
 
                           </div>
                           <div class="article-owner d-inline-block">
