@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Register</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Battambang&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css">
+    <style type="text/css">
+        .picker--opened .picker__frame{
+            top: 0% !important;
+        }
+    </style>
+</head>
+	
+<body style="background: #eeeeee">
+    <div class="container" style="margin-bottom: 50px;
+    margin-top: 35px;">
+        <br>
+        <div class="card">
+            <!--Section: Contact v.2-->
+            <section class="mb-4">
+                <!--Section heading-->
+                <h4 class=" font-weight-bold text-center my-4" style="text-decoration: underline;">ទំរង់ព័ត៏មាននៃការចុះឈ្មោះ</h4>
+                <!--Section description-->
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <!--Grid row-->
+                        <p class=" mx-auto mb-5">ព័ត៏មានអំពីអ្នកប្រើប្រាស់</p>
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="firstname" class="form-control"><span class="haha"
+                                        id="err1"></span>
+                                    <label>ឈ្មោះ​</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="lastname" class="form-control"><span class="haha"
+                                        id="err2"></span>
+                                    <label>ត្រកូល</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div><br>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="custom-control custom-control-inline">
+                                    <label class="mar">ភេទ:</label>
+                                </div>
+                                <!-- Default inline 2-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input " id="defaultInline2"
+                                        name="inlineDefaultRadiosExample" checked>
+                                    <label class="custom-control-label" for="defaultInline2">ប្រុស</label>
+                                </div>
+                                <!-- Default inline 3-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="defaultInline3"
+                                        name="inlineDefaultRadiosExample" >
+                                    <label class="custom-control-label" for="defaultInline3">ស្រី</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row md-form col-md-6">
+                                <input placeholder="ថ្ងៃខែឆ្នាំកំណើត" type="text" id="jerryj" class="form-control datepicker" value=""><span id="hellowrld" class="haha"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <select id="input" onchange="random_function()"
+                                    class="browser-default custom-select ">
+                                    <option value="1" >ខេត្ត/ក្រុង</option>
+                                    <option value="2">ភ្នំពេញ</option>
+                                    <option value="3">សៀមរាប</option>
+                                    <option value="4">កណ្ដាល</option>
+                                    <option value="5">កោះកុង</option>
+                                    <option value="6">ក្រចេះ</option>
+                                    <option value="7">ប៉ៃលិន</option>
+                                    <option value="8">កំពង់ចាម</option>
+                                    <option value="9">បាត់ដំបង</option>
+                                    <option value="10">ពោធិ៍សាត់</option>
+                                </select><span class="haha" id="errorj"></span>
+                                <label for=""></label>
+                            </div>
+                            <div class="col-md-6 select-outline">
+                                <div id="output">
+                                    <select class="browser-default custom-select"
+                                        style="width: 100%">
+                                        <option​ >ស្រុក/ខណ្ណ</option>
+                                    </select>
+                                    <label for=""></label>
+                                </div>
+                            </div>
+                        </div>
+                    </form><br>
+                    <!--Grid column-->
+                </div>
+                <div class="col-md-12">
+
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <!--Grid row-->
+                        <p class=" mx-auto mb-5">ព័ត៏មានអំពីសាលា</p><br>
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-6 select-outline">
+                                <select id="primary" class="browser-default custom-select">
+                                	<option value="">ឈ្មោះសាលា</option>
+                                    <option value="1">៧ មករា</option>
+                                    <option value="2">ន.រណឫទ្ធិគន្ធបុប្ផា</option>
+                                    <option value="3">ជា ស៊ីមបឹងកេងកង</option>
+                                </select><span class="haha" id="errors1"></span>
+                                <label for=""></label>
+                            </div>
+                            <div class="col-md-6 select-outline">
+                                <select class="browser-default custom-select"
+                                    id="year1">
+                                    <option value="">ឆ្នាំសិក្សា</option>
+                                    <option value="1">2011</option>
+                                    <option value="2">2012</option>
+                                    <option value="3">2013</option>
+                                    <option value="4">2014</option>
+                                    <option value="5">2015</option>
+                                </select><span class="haha" id="erroryear1"></span>
+                                <label for=""></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 select-outline">
+                                <select class="browser-default custom-select"
+                                    id="secondary">
+                                    <option value="">ឈ្មោះសាលា</option>
+                                    <option value="1">ជា ស៊ីមបឹងកេងកង</option>
+                                    <option value="2">វិ. បំ.វិ.ជាស៊ីមតាកែវ</option>
+                                    <option value="3">ELT</option>
+                                </select><span class="haha" id="errors2"></span>
+								<label for=""></label>
+                            </div>
+                            <div class="col-md-6 select-outline">
+                                <select class="browser-default custom-select"
+                                    id="year2">
+                                    <option value="">ឆ្នាំសិក្សា</option>
+                                    <option value="1">2011</option>
+                                    <option value="2">2012</option>
+                                    <option value="3">2013</option>
+                                    <option value="4">2014</option>
+                                    <option value="5">2015</option>
+                                </select><span class="haha" id="erroryear2"></span>
+                                <label for=""></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <select class="browser-default custom-select colorful-select dropdown-primary"
+                                    id="highschool">
+                                    <option value="">ឈ្មោះសាលា</option>
+                                    <option value="1">វិ. បំ.វិ.ជាស៊ីមតាកែវ</option>
+                                    <option value="2">ន.រណឫទ្ធិគន្ធបុប្ផា</option>
+                                    <option value="3">ជា ស៊ីមបឹងកេងកង</option>
+                                </select><span class="haha" id="errors3"></span>
+                                <label for=""></label>
+                            </div>
+                            <div class="col-md-6 select-outline">
+                                <select class="browser-default custom-select colorful-select dropdown-primary"
+                                    id="year3">
+                                    <option value="">ឆ្នាំសិក្សា</option>
+                                    <option value="1">2011</option>
+                                    <option value="2">2012</option>
+                                    <option value="3">2013</option>
+                                    <option value="4">2014</option>
+                                    <option value="5">2015</option>
+                                </select><span class="haha" id="erroryear3"></span>
+                                <label for=""></label>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" id="btn"
+                        class="btn btn-info btn-lg btn-block text-center wid" style="transform: translateY(10px);">បានបំពេញរួចរាល់</button>
+                    <!--Grid column-->
+                </div>
+            </section>
+            <!--Section: Contact v.2-->
+        </div>
+
+    </div>
+    <div class="modal fade" id="successRecordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header" style="display: block; background: #03a9f4">
+        <p class="heading lead text-center" >ទិន្នន័យត្រូវបានរក្សាទុក</p>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body text-center">
+       <i class="fas fa-laugh-wink fa-4x mb-3 animated rubberBand" style="color: #03a9f4;"></i>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center" >
+        <button onclick="goproo()" data-dismiss="modal" type="button" class="btn btn-info" style="text-transform: capitalize;margin: 0 auto;">បាទ/ចាស	</button>
+        
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        // Material Select Initialization
+        $('.datepicker').pickadate();
+        $('.mdb-select').materialSelect();
+        $('.select-wrapper.md-form.md-outline input.select-dropdown').bind('focus blur', function () {
+            $(this).closest('.select-outline').find('label').toggleClass('active');
+            $(this).closest('.select-outline').find('.caret').toggleClass('active');
+        });
+    </script>
+    <script src="js/lslsls.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script type="text/javascript">
+        function goproo(){
+            window.location.href = "newsfeed.html";
+        }
+    </script>
+</body>
+
+</html>

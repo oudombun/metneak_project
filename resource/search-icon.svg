@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="626 -7 51 52.966">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8d8989;
+      }
+    </style>
+  </defs>
+  <path id="search-icon" class="cls-1" d="M51.7,51.273,36.845,35.82a21.017,21.017,0,1,0-1.478,1.348l14.9,15.491A1,1,0,1,0,51.7,51.273ZM21.983,40a19,19,0,1,1,19-19A19.021,19.021,0,0,1,21.983,40Z" transform="translate(625.017 -7)"/>
+</svg>

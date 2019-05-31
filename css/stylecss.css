@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Hanuman&display=swap');
+body {
+    font-family: 'Hanuman','Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+        
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 0rem!important;
+}
+.mar{
+    margin-left: -23px !important;
+}
+.md-outline.select-wrapper+label {
+    top: .5em !important;
+    z-index: 2 !important;
+}
+.wid{
+    width: 60%;
+    margin: 0 auto !important;
+    display: block;
+}
+select {
+    font-family: hanuman,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+}

@@ -1,0 +1,132 @@
+.modal {
+    vertical-align: top!important;
+    height: unset!important;
+    margin: 0 auto;
+}
+.blocker {
+    z-index: 30!important;
+}
+#upload-modal {
+    display: none;
+    min-width: 300px;
+    max-width: 500px;
+    background-color:#fff;
+    border-radius: 4px;
+    padding: 5px 10px 10px 0px;
+    overflow: visible;
+    left: 0px;
+    right: 0px;
+    top: 28px;
+    
+}
+#modal-container {
+    padding: 10px 10px 0px 0px; 
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+}
+.upload-profile {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;  
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+.upload-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('../resource/photo-camera1.svg');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#upload-text {
+    width: 100%;
+  
+    
+}
+.p-0 {
+    padding: 0!important;
+}
+#post-button {
+float: right;
+position: absolute;
+bottom: 0;
+right: -20px;
+}
+#post-button__ {
+    background-color:#69beff;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 5px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#image-preview {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 50px;   
+}
+#image-preview__ {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+/*upload progress*/
+#upload-progress {
+    display: none;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, .5);
+    border-radius: 2px;
+    z-index: 100;
+    overflow: hidden;
+}
+.progress-header {
+    background:#0984e3;
+    text-align: center;
+    padding: 4px 76px;
+    font-family: 'Asap', sans-serif;
+    bottom: 10px;
+    right: 10px;
+   
+}
+.progress-body {
+    height: 30px;
+    width: 100%;
+    background-color: #fff;
+}
+.mprogress {
+    margin: 0 auto;
+    width: 90%;
+    height: 13px;
+}
+.txt_white {
+    font-weight: bold;
+    margin: 0px;
+    font-size: 12px;
+    color: #fff;
+}
+/*mprogress overwrite*/
+.deter-bar {
+    background: #0984e3!important;
+}
+.peg {
+    box-shadow: 0 0 10px #ffffff00, 0 0 5px #29d0!important;
+}
+.bar-bg {
+    background:#cadffe!important;
+}

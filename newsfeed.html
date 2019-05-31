@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/emojionearea.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/emojionearea.min.css">
+
+    <link rel="stylesheet" href="style/uploadform.css">
+    <link rel="stylesheet" href="style/uploadformoverwrite.css">
+    <script src="script/nprogress.js"></script>
+    <link rel="stylesheet" href="style/nprogress.css">
+    <script src="script/moment.js"></script>
+    <script src="script/moment-with-locales.js"></script>
+    <link rel="stylesheet" href="style/animate.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <!-- pull the css -->
+    <link rel="stylesheet" href="https://unpkg.com/toastedjs/dist/toasted.min.css">
+
+    <!-- pull the js file -->
+    <script src="https://unpkg.com/toastedjs/dist/toasted.min.js"></script>
+    <link rel="stylesheet" href="style/style.css" id="mode">
+    <script src="script/sc.js"></script>    
+    <style type="text/css">
+        .pull-right{
+            float: right;
+        }
+    </style>
+     <script type="text/javascript">
+        function gopro() {
+            window.location.href = "profile.html";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div id="upload-modal" class="f-hanuman">
+        <a href="#" rel="modal:close"><span class="close" id="close-upload-modal">&times;</span></a>
+        <div id="modal-container">
+            <div class="row">
+                <div class="col-md-2 p-0">
+                    <div class="upload-profile" style="background-image:url('image/lisa.jpg')">
+
+                    </div>
+                </div>
+                <div class="col-md-10 p-0">
+                    <textarea name="" id="upload-text" placeholder="What in your mind?.."></textarea>
+                </div>
+            </div>
+            <div id="image-preview">
+                <img src="" alt="" id="image-preview__">
+            </div>
+            <input type="file" name="image-upload" id="image-upload" style="display: none">
+            <label for="image-upload" class="upload-icon"></label>
+            <div id="post-button">
+                <button id="post-button__">Share</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="preloader"></div> -->
+    <header>
+        <div  style="margin: 0 auto;width: 84%;"> 
+             <div id="logo-container" class="d-inline-block">
+            <span id="logo" class="f-bg d-inline-block" style="background-image: url('resource/logo1.svg')"></span>
+            <div id="text-logo" class="d-inline-block">
+                <p class="d-inline-block">មិត្តអ្នក</p>
+            </div>
+        </div>
+        <div id="post--" class="d-inline-block f-bg" data-toggle="modal" data-target="#myModal">
+
+        </div>
+        <div id="search-box-container" class="d-inline-block">
+            <div id="search-box-contain">
+                <input type="text" id="search-input">
+                <span id="search-icon" class="d-inline-block f-bg"></span>
+            </div>
+        </div>
+        <div id="action--" style="cursor: pointer;" onclick="gopro()" class="d-inline-block pull-right">
+            <div id="friend-request-icon" class="d-inline-block f-bg">
+
+            </div>
+            <div id="notification-icon" class="d-inline-block f-bg">
+
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 padding0" style="padding-left: 13px">
+                <div id="left-side">
+                    <div id="left-side-content">
+                        <span class="post-cate--" class="d-block">Post Categories</span>
+
+                        <div class="post-category">
+                            <div id="circle-container">
+                                <span data-toggle="tooltip" data-placement="bottom" title="See all" class="circle-cate"
+                                    style="background-image: url('resource/star.svg')"></span>
+                                <span data-toggle="tooltip" data-placement="bottom" title="Photo"
+                                    class="circle-cate circle-active"
+                                    style="background-image: url('resource/imageactive.svg')"></span>
+                                <span data-toggle="tooltip" data-placement="bottom" title="Status" class="circle-cate"
+                                    style="background-image: url('resource/status.svg')"></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div id="school--">
+                            <span class="post-cate--">School</span>
+                            <ul class="f-hanuman" id="school-list">
+                                <li><a href="#">បឋម. Korea Software HRD (2019)</a></li>
+                                <li><a href="#">អនុ. Korea Software HRD (2019)</a></li>
+                                <li><a href="#">វិទ្យា. Korea Software HRD (2019)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 padding0">
+                <div id="main-container">
+                    <article>
+                        <span class="option f-bg">
+                            <div class="delete f-hanuman">
+                                មិនចង់ឃើញ
+                            </div>
+                        </span>
+                        <div class="article-header">
+                            <div class="article-profile f-bg d-inline-block"
+                                style="background-image: url('image/lisa.jpeg')">
+
+                            </div>
+                            <div class="article-owner d-inline-block" >
+                                <span class="_name d-block" >chivorn16</span>
+                                <span class="_time d-block">a few second ago</span>
+                            </div>
+                        </div>
+                        <section class="article-body">
+                            <div class="_status">there are no real definition of love </div>
+                            <div class="_photo f-bg" style="background-image: url('image/lisa.jpg')">
+
+                            </div>
+                        </section>
+                        <section class="article-footer">
+                            <div class="article-action">
+                                <span class="_like d-inline-block"></span>
+                                <span class="_like-count count d-inline-block">0</span>
+                                <span class="_comment d-inline-block"></span>
+                                <span class="_comment-count count d-inline-block">0</span>
+                            </div>
+                            <!--comment container-->
+                            <div class="comment-container">
+                            </div>
+                            <div class="comment-box">
+                                <div class="comment-post-- d-inline-block f-bg"
+                                    style="background-image: url('image/lisa.jpeg')"></div>
+                                <textarea name="" type="text" class="comment-text--"
+                                    placeholder="Add your comment..."></textarea>
+                            </div>
+                        </section>
+                    </article>
+                    <article>
+                        <span class="option f-bg">
+                            <div class="delete f-hanuman">
+                                មិនចង់ឃើញ
+                            </div>
+                        </span>
+                        <div class="article-header">
+                            <div class="article-profile f-bg d-inline-block"
+                                style="background-image: url('image/lisa.jpeg')">
+
+                            </div>
+                            <div class="article-owner d-inline-block">
+                                <span class="_name d-block">chivorn16</span>
+                                <span class="_time d-block">a few second ago</span>
+                            </div>
+                        </div>
+                        <section class="article-body">
+                            <div class="_status">there are no real definition of love </div>
+                            <div class="_photo f-bg" style="background-image: url('image/post.jpg')">
+
+                            </div>
+                        </section>
+                        <section class="article-footer">
+                            <div class="article-action">
+                                <span class="_like d-inline-block"></span>
+                                <span class="_like-count count d-inline-block">0</span>
+                                <span class="_comment d-inline-block"></span>
+                                <span class="_comment-count count d-inline-block">0</span>
+                            </div>
+                            <!--comment container-->
+                            <div class="comment-container">
+
+                            </div>
+                            <div class="comment-box">
+                                <div class="comment-post-- d-inline-block f-bg"
+                                    style="background-image: url('image/lisa.jpeg')"></div>
+                                <textarea name="" type="text" class="comment-text--"
+                                    placeholder="Add your comment..."></textarea>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+            <div class="col-md-3 padding0">
+                <div id="right-side">
+                    <div id="user--" style="cursor: pointer;" onclick="gopro()">
+                        <div id="user-image--" class="d-inline-block f-bg"
+                            style="background-image: url('image/lisa.jpeg')">
+
+                        </div>
+                        <span id="username--" class="d-inline-block">chivorn16</span>
+                    </div>
+                    <div id="right-side-content">
+                        <span class="group-friend f-hanuman d-inline-block">សមាជិកក្នុងក្រុមរបស់អ្នក(5
+                            នាក់)</span><button class="all-btn f-hanuman">ទាំងអស់</button>
+                        <div class="group-friend-container">
+                            <div class="friend f-bg" style="background-image: url('image/lisa.jpg')">
+
+                            </div>
+                            <div class="friend f-bg" style="background-image: url('image/p1.jpg')">
+
+                            </div>
+                            <div class="friend f-bg" style="background-image: url('image/p2.jpg')">
+
+                            </div>
+                            <div class="friend f-bg" style="background-image: url('image/p3.jpg')">
+
+                            </div>
+                            <div class="friend f-bg" style="background-image: url('image/lisa.jpeg')">
+
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <span class="activity-title f-hanuman">សកម្មភាពប្រចាំថ្ងៃ</span>
+                            <div id="activity-container">
+                                <div class="act">
+                                    <div class="act-profile d-inline-block f-bg"
+                                        style="background-image: url('image/p1.jpg')">
+                                    </div>
+                                    <span class="act-type f-hanuman d-inline">មិត្តអ្នកបានចូលចិត្តលើរូបរបស់អ្នក</span>
+                                </div>
+                                <div class="act">
+                                    <div class="act-profile d-inline-block f-bg"
+                                        style="background-image: url('image/p3.jpg')">
+                                    </div>
+                                    <span class="act-type f-hanuman d-inline">oudom comment on your photo</span>
+                                </div>
+                                <div class="act">
+                                    <div class="act-profile d-inline-block f-bg"
+                                        style="background-image: url('image/p2.jpg')">
+                                    </div>
+                                    <span class="act-type f-hanuman d-inline">មិត្តអ្នកបានចូលចិត្តលើរូបរបស់អ្នក</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+    <script src="deviant.js"></script>
+</body>
+
+</html>
